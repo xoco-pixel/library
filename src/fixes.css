@@ -1,0 +1,2 @@
+/* Keep the existing visual system and add the states used by the corrected app. */
+.global-alert{display:flex;align-items:center;justify-content:space-between;gap:10px}.global-alert button{border:0;background:transparent;color:inherit;display:grid;place-items:center}.admin-actions{flex-wrap:wrap}.admin-actions button{cursor:pointer}.admin-form label{display:grid;gap:7px;color:var(--muted);font-weight:600}.admin-form textarea{resize:vertical}.reader-shell{position:fixed;inset:0;z-index:40;overflow:auto;background:var(--card)}
