@@ -1,15 +1,15 @@
 {
   "name": "gmsab-library",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
     "dev:client": "vite --host 0.0.0.0 --port 5173",
-    "dev:server": "node --watch server/server.js",
+    "dev:server": "node --watch server/server.cjs",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0 --port 4173",
-    "start": "NODE_ENV=production node server/server.js"
+    "start": "NODE_ENV=production node server/server.cjs"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -19,8 +19,10 @@
     "dotenv": "^16.4.1",
     "express": "^4.19.2",
     "express-session": "^1.18.0",
-    "lucide-react": "^0.469.0",
+    "helmet": "^8.0.0",
+    "express-rate-limit": "^7.4.1",
     "multer": "^1.4.5-lts.2",
+    "lucide-react": "^0.469.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
